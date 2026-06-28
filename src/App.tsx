@@ -820,7 +820,7 @@ function WeddingInvitation() {
                       </div>
 
                       <div className="pl-8 space-y-4 pt-4 text-stone-500 text-sm md:text-base tracking-wide font-light leading-relaxed">
-                        We look forward to welcoming you to this beautiful sanctuary to celebrate our special day amidst nature's elegance.
+                        We look forward to celebrating our love with you in the graceful and timeless atmosphere of this magnificent heritage hotel.
                       </div>
                     </div>
 
