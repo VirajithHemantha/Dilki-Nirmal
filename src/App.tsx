@@ -14,7 +14,7 @@ const backgroundMusic = "/Westlife_-_So_Beautiful_In_White_(mp3.pm).mp3";
 const flowerImage = "/silver_orchid.png";
 const flowerCornerImage = "/silver_orchid_corner.png";
 const flowerArchImage = "/silver_orchid_arch.png";
-const brideGroomImage = "/images/10.png";
+const brideGroomImage = "/images/1.jpg";
 
 type InviteImageProps = React.ComponentProps<"img"> & {
   eager?: boolean;
@@ -583,22 +583,17 @@ function WeddingInvitation() {
                   className="flex flex-col items-center mb-8 md:mb-16"
                 >
                   <div className="w-[2px] h-16 md:h-24 bg-gradient-to-b from-transparent via-theme-400 to-transparent mb-8 md:mb-12 shadow-[0_0_10px_rgba(192,192,192,0.3)]" />
-                  <p className="text-zinc-800 text-[10px] md:text-[14px] tracking-[0.6em] md:tracking-[0.8em] uppercase font-bold text-center leading-relaxed max-w-2xl px-4">
-                    <span className="text-theme-500 block text-[8px] md:text-[10px] mb-3 md:mb-4 tracking-[0.8em]">Wedding Celebration</span>
-                    {guestName ? (
-                      <>
-                        <span className="text-theme-800 font-cinzel text-xl md:text-3xl tracking-[0.2em] block mb-4 capitalize">
-                          {guestPrefix ? `${guestPrefix} ` : ''}{guestName}
-                        </span>
-                        We warmly invite you to<br className="hidden md:block" />
-                      </>
-                    ) : (
-                      <>
-                        You are cordially invited to<br className="hidden md:block" />
-                      </>
+                  <div className="flex flex-col items-center text-center max-w-2xl px-4">
+                    <span className="text-theme-500 block text-[8px] md:text-[10px] mb-3 md:mb-4 tracking-[0.8em] uppercase font-bold">Wedding Celebration</span>
+                    {guestName && (
+                      <span className="text-theme-800 font-cinzel text-xl md:text-3xl tracking-[0.2em] block mb-4 capitalize font-bold">
+                        {guestPrefix ? `${guestPrefix} ` : ''}{guestName}
+                      </span>
                     )}
-                    <span className="text-theme-600">celebrate the union of</span>
-                  </p>
+                    <p className="text-stone-600 text-sm md:text-base leading-loose tracking-wide font-light mt-2 px-4 md:px-8">
+                      We look forward to celebrating our love with you in the graceful and timeless atmosphere of this magnificent heritage hotel.
+                    </p>
+                  </div>
                   <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-theme-400 to-transparent mt-8 md:mt-10 shadow-[0_0_10px_rgba(192,192,192,0.3)]" />
                 </motion.div>
 
